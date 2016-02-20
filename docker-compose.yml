@@ -1,0 +1,23 @@
+##############################################################################
+#
+# Compose file for docker image ubuntu-nginx-php-ssmtp
+#
+##############################################################################
+
+nps:
+  restart: always
+  image: panderpeter/ubuntu-nginx-php-ssmtp
+  ports:
+    - "80"
+  volumes:
+    - /path/to/your/website:/var/www
+  environment:
+    - SMTP_HOST=smtp.gmail.com:587
+    - SMTP_DOMAIN=gmail.com
+    - SMTP_TLS=YES
+    - SMTP_STARTTLS=YES
+    - SMTP_USERNAME=username
+    - SMTP_PASSWORD=password
+#
+##################################################################
+
