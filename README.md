@@ -16,3 +16,6 @@ docker run -d \
 panderpeter/ubuntu-nginx-php-ssmtp
 ```
 
+## Compose
+I've added a compose file for easier usage. Check it out from my repo.
+
